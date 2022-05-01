@@ -202,6 +202,11 @@ header {
     border-radius: 16px;
 }
 
+.button:hover {
+    background-color: #9b7549;
+    transition: all linear .25s;
+}
+
 /* Specific areas */ 
 
 .section-aboutus {
@@ -255,4 +260,220 @@ header {
     margin-top: 10px;
     color: #AAAAAA;
     font-size: 14px;
+}
+
+ 
+.section-ourprojects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-ourprojects-filters {
+    border: 1px solid #CCCCCC;
+    background-color: #e7e7e7;
+    border-radius: 20px;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.section-ourprojects-filters ul,
+.section-ourprojects-filters li {
+    list-style: none;
+}
+
+.section-ourprojects-filters li {
+    display: inline-block;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #555555;
+    border-left: 1px solid #CCCCCC;
+    border-bottom: 4px solid #e7e7e7;
+    cursor: pointer;
+}
+
+
+.section-ourprojects-filters li:hover {
+    border-bottom: 4px solid #B28756;
+    transition: all linear .25s;
+    color: #222222;
+}
+
+.section-ourprojects-filters li:first-child {
+    border-left: 0;
+}
+
+.section-ourprojects-filters li.active {
+    border-bottom: 4px solid #B28756;
+}
+
+.section-ourprojects-photos {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-ourprojects-photo {
+    width: 280px;
+}
+
+.section-ourprojects-photoarea {
+    margin: 10px;
+    width: 260px;
+    height: 174px;
+    cursor: pointer;
+}
+
+.section-ourprojects-photoarea img {
+    width: inherit;
+    height: inherit;
+    box-shadow: 1px 2px 5px #999;
+    
+}
+
+.section-ourprojects-photoinfo {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF
+}
+
+.section-ourprojects-photoinfo h3 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-ourprojects-photoinfo p {
+    font-size: 14px;
+}
+
+.section-ourprojects-photoarea:hover .section-ourprojects-photoinfo {
+    display: flex;
+    box-shadow: 2px 3px 6px #666666;
+    transition: all linear .25s;
+}
+
+
+.bg-team {
+    background-image: url('../images/pedro-lastra-Nyvq2juw4_o-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.section-ourteam {
+    overflow: hidden;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.section-team-area {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.section-ourteam .sliders {
+    width: 300vw;
+    height: 100%;
+}
+
+.section-ourteam .slide {
+    width: 360px;
+    height: 100%;
+    display: inline-block;
+    background-color: #FFFFFF;
+    flex:1;
+    margin-right: 20px;
+    color: #000000;
+    border-radius: 2px;
+    padding: 50px;
+}
+
+.section-ourteam .slide-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    color: #000000;
+    text-align: center;
+}
+
+.section-ourteam .slide-pointers {
+    margin-top: 50px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-ourteam .pointer {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.section-ourteam .pointer.active {
+    background-color: #B28756;
+}
+
+.section-ourteam-avatar {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.section-ourteam-avatar img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+}
+
+.section-ourteam-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.section-ourteam-role {
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 50px;
+}
+
+.section-ourteam-social img {
+    width: 14px;
+    height: 14px;
+}
+
+.section-ourteam-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #999;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.section-ourteam-social a:hover {
+    background-color: #B28756;
+    transition: all linear .25;
 }
